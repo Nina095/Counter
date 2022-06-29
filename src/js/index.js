@@ -6,9 +6,10 @@ import ReactDOM from "react-dom";
 
 //include your index.scss file into the bundle
 import "../styles/index.scss";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 //import component(s)
-import SecondsCounter from "./component/SecondsCounter.js";
+import Counter from "./component/SecondsCounter.js";
 
 let counter = 0;
 
@@ -22,9 +23,9 @@ setInterval(
 		const secondOne = counter;
 		counter++;
 
-		// Renders SecondsCounter into the DOM
+		// Renders Counter into the DOM
 		ReactDOM.render(
-			<SecondsCounter
+			<Counter
 				secondOne={secondOne}
 				secondTwo={secondTwo}
 				secondThree={secondThree}
